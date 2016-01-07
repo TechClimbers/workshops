@@ -1,8 +1,8 @@
 #!/usr/bin/python
 
 try:
+	import msvcrt
 	def getkey():  # define a Windows version
-		import msvcrt
 		return msvcrt.getch()
 except ImportError:
 	def getkey():   # define non-Windows version
